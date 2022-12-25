@@ -4,6 +4,10 @@ import LogoRayados from '../../assets/images/logo-rayados.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+    faGithub,
+    faLinkedin,
+  } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
     <div className='nav-bar'>
@@ -23,6 +27,18 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faEnvelope} color= "#022c43" />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/alonsogzz/'>
+                    <FontAwesomeIcon icon={faLinkedin} color= "#022c43" />
+                </a>
+            </li>
+            <li>
+                <a target='_blank' rel='noreferrer' href='https://github.com/AlonsoGonzalezGonzalez'>
+                    <FontAwesomeIcon icon={faGithub} color= "#022c43" />
+                </a>
+            </li>
+        </ul>
     </div>
 )
 
